@@ -68,7 +68,7 @@ if ((-not (Test-Path variable:local:vPathTo7zExe)) -or `
     (-not (Test-Path -Path "$vPathToProductBuilderExe" -PathType "Leaf")))
 {
     Write-Host "Error: One or more variables are not set"
-    Write-Host "or files specified in them do not exist."
+    Write-Host "or paths they link to are not valid."
     Write-Host ""
     Write-Host "List of mandatory variables (variables.ps1):"
     Write-Host "vPathTo7zExe, vPathToSignToolExe, vPathToProductBuilderExe"
